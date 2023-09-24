@@ -34,6 +34,17 @@ export default function Details() {
             >
                 <Text style={{ color: '#ffffff', letterSpacing: 1,  textAlign: 'center' }}>Profile</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+                style={{ marginTop: 20, backgroundColor: 'red', paddingVertical: 4, paddingHorizontal: 8, borderRadius: 6 , width: 100, }}
+                onPress={() => {
+                    navigate('LoginEfetuado')
+                }}
+            >
+                <Text
+                    style={{ color: '#ffffff', letterSpacing: 1, textAlign: 'center' }}
+                >Login Efetuado</Text>
+            </TouchableOpacity>
         </View>
     )
 }

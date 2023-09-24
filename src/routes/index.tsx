@@ -1,6 +1,7 @@
 import { NavigationContainer } from '@react-navigation/native'
 import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
+import LoginEfetuado from '../screens/LoginEfetuado'
 import Home from '../screens/Home'
 import Profile from '../screens/Profile'
 import Details from '../screens/Details'
@@ -26,6 +27,7 @@ export const Routes = () => {
                 <Stack.Screen name='Home' component={Home} />
                 <Stack.Screen name='Profile' component={Profile} />
                 <Stack.Screen name='Details' component={Details} />
+                <Stack.Screen name='LoginEfetuado' component={LoginEfetuado} />
             </Stack.Navigator>
         </NavigationContainer>
     )
