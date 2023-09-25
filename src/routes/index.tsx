@@ -5,6 +5,7 @@ import LoginEfetuado from '../screens/LoginEfetuado'
 import Home from '../screens/Home'
 import Profile from '../screens/Profile'
 import Details from '../screens/Details'
+import LoginEmail from '../screens/LoginEmail'
 
 const Stack = createNativeStackNavigator()
 
@@ -28,6 +29,7 @@ export const Routes = () => {
                 <Stack.Screen name='Profile' component={Profile} />
                 <Stack.Screen name='Details' component={Details} />
                 <Stack.Screen name='LoginEfetuado' component={LoginEfetuado} />
+                <Stack.Screen name='LoginEmail'component={LoginEmail} />
             </Stack.Navigator>
         </NavigationContainer>
     )

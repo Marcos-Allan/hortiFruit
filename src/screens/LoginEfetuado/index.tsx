@@ -11,7 +11,7 @@ export default function LoginEfetuado() {
             
             <Image
                 style={styles.img}
-                source={require('../../../imgs/confetti 1.png')}
+                source={require('../../../imgs/confete.png')}
                 />
 
             <Text style={styles.text}> Login Efetuado </Text>
