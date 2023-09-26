@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
         fontSize: 20,
     },
     registerIcon: {
-        marginLeft: 12,
+        marginLeft: 20,
         fontSize: 22,
         color: '#000000',
     },
@@ -43,6 +43,7 @@ export const styles = StyleSheet.create({
         height: 280,
     },
     destaque:{
+        textAlign: 'center',
         marginTop: 5,
         color: '#7CD92B',
         fontSize: 18,

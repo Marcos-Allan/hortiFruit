@@ -6,6 +6,8 @@ import Home from '../screens/Home'
 import Profile from '../screens/Profile'
 import Details from '../screens/Details'
 import LoginEmail from '../screens/LoginEmail'
+import LoginTelefone from '../screens/LoginTelefone'
+import LoginGeral from '../screens/LoginGeral'
 
 const Stack = createNativeStackNavigator()
 
@@ -24,12 +26,14 @@ declare global {
 export const Routes = () => {
     return(
         <NavigationContainer>
-            <Stack.Navigator>
+            <Stack.Navigator initialRouteName='LoginGeral'>
                 <Stack.Screen name='Home' component={Home} />
                 <Stack.Screen name='Profile' component={Profile} />
                 <Stack.Screen name='Details' component={Details} />
                 <Stack.Screen name='LoginEfetuado' component={LoginEfetuado} />
                 <Stack.Screen name='LoginEmail'component={LoginEmail} />
+                <Stack.Screen name='LoginTelefone'component={LoginTelefone} />
+                <Stack.Screen name='LoginGeral'component={LoginGeral} />
             </Stack.Navigator>
         </NavigationContainer>
     )

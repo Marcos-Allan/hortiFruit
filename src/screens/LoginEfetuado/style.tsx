@@ -5,11 +5,11 @@ export const styles = StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        padding: '10%',
     },
     text: {
-        fontWeight: 'bolder',
+        fontWeight: 'bold',
         fontSize: 36,
-        marginBottom: 20,
         color: '#7CD92B',
     },
     img: {
@@ -17,11 +17,12 @@ export const styles = StyleSheet.create({
         height: 300,
     },
     btn: {
-        width: '80%',
+        marginTop: 20,
+        width: '100%',
         backgroundColor: '#7CD92B',
         paddingVertical: 10,
         paddingHorizontal: 6,
-        borderRadius: 20,
+        borderRadius: 8,
     },
     btnText: {
         color: '#ffffff',

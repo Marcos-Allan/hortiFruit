@@ -3,7 +3,7 @@ import { useNavigation } from '@react-navigation/native'
 import Icon from 'react-native-vector-icons/FontAwesome';
 import {styles} from './style'
 
-export default function LoginEmail() {
+export default function LoginTelefone() {
 
     const { navigate } = useNavigation()
 
@@ -14,18 +14,18 @@ export default function LoginEmail() {
                 <Icon style={styles.registerIcon} name='user' />
             </View>
 
-            <Text style={styles.text}>Olá crie sua conta abaixo com o e-mail</Text>
+            <Text style={styles.text}>Olá crie sua conta abaixo com telefone</Text>
 
             <Image
                 style={styles.img}
-                source={require('../../../imgs/personal 2.png')}
+                source={require('../../../imgs/personal 1.png')}
                 />
 
-            <Text style={styles.destaque}>Adicione o seu endereço de e-mail</Text>
+            <Text style={styles.destaque}>Adicione o seu número de telefone</Text>
 
             <TextInput
                 style={styles.inputTexto}
-                placeholder='seuemail@gmail.com'
+                placeholder='1234567890'
             />
             
             <View style={styles.otherLogin}>
@@ -33,9 +33,9 @@ export default function LoginEmail() {
                 <Text
                     style={styles.otherLoginStronger}
                     onPress={() => {
-                        navigate('LoginTelefone')
+                        navigate('LoginEmail')
                     }}
-                >telefone</Text>
+                >email</Text>
             </View>
 
             <TouchableOpacity

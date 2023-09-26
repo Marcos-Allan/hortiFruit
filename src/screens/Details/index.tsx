@@ -56,6 +56,28 @@ export default function Details() {
                     style={{ color: '#ffffff', letterSpacing: 1, textAlign: 'center' }}
                 >Login Email</Text>
             </TouchableOpacity>
+
+            <TouchableOpacity
+                style={{ marginTop: 20, backgroundColor: 'red', paddingVertical: 4, paddingHorizontal: 8, borderRadius: 6 , width: 100, }}
+                onPress={() => {
+                    navigate('LoginTelefone')
+                }}
+            >
+                <Text
+                    style={{ color: '#ffffff', letterSpacing: 1, textAlign: 'center' }}
+                >Login Telefone</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={{ marginTop: 20, backgroundColor: 'red', paddingVertical: 4, paddingHorizontal: 8, borderRadius: 6 , width: 100, }}
+                onPress={() => {
+                    navigate('LoginGeral')
+                }}
+            >
+                <Text
+                    style={{ color: '#ffffff', letterSpacing: 1, textAlign: 'center' }}
+                >Login Geral</Text>
+            </TouchableOpacity>
         </View>
     )
 }
