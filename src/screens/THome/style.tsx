@@ -1,3 +1,4 @@
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native'
 import { StyleSheet } from 'react-native'
 
 export const styles = StyleSheet.create({
@@ -51,5 +52,89 @@ export const styles = StyleSheet.create({
     itemSMenuActive:{
         backgroundColor: '#5DB610',
         color: '#FFFFFF',
+    },
+    propaganda: {
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+    },
+    propagandaText: {
+        textAlign: 'left',
+        fontSize: 18,
+    },
+    propagandaImg: {
+        marginLeft: 12,
+        width: 20,
+        height: 20,
+    },
+    card: {
+        width: '100%',
+        height: 100,
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        borderRadius: 8,
+        overflow: 'hidden',
+    },
+    cardImg:{
+        width: '40%',
+        backgroundColor: 'red',
+        position: 'relative',
+        display: 'flex',
+        justifyContent: 'center',
+        borderRadius: 8,
+        alignItems: 'center',
+    },
+    produtoImg: {
+        width: '72%',
+        height: '80%',
+    },
+    cardIcon: {
+        position: 'absolute',
+        bottom: 0,
+        right: 0,
+        backgroundColor: 'blue',
+        width: 36,
+        height: 36,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        borderRadius: 8,
+        margin: 6,
+    },
+    favoriteIcon: {
+        width: 18,
+        height: 18,
+    },
+    cardInfo: {
+        width: '60%',
+        paddingLeft: 14,
+        backgroundColor: 'transparent',
+    },
+    produtoInfo: {
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+        width: '100%',
+        marginVertical: 4,
+    },
+    titleProduto: {
+        fontWeight: 'bold',
+    }, 
+    starIcon: {
+        width: 14,
+        height: 14,
+        marginLeft: 8,
+        marginRight: 4,
+    },
+    avaliationProduto: {
+        fontSize: 14,
+        color: '#FFBB56',
+    },
+    textDesconto: {
+        color: '#a3a3a3',
+    },
+    textPrice: {
+        fontSize: 20,
     }
 })
