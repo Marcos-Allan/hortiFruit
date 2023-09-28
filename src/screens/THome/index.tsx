@@ -1,4 +1,4 @@
-import { View, Text, ScrollView, Image } from 'react-native'
+import { View, Text, ScrollView, Image, TouchableOpacity } from 'react-native'
 import { useNavigation } from '@react-navigation/native'
 import { styles } from './style'
 
@@ -8,6 +8,8 @@ export default function THome() {
 
     return(
         <View style={styles.container}>
+
+            {/* MENU DE PESQUISA */}
             <View style={styles.menu}>
                 <Image
                     style={styles.menuImage}
@@ -18,12 +20,20 @@ export default function THome() {
                     source={require('../../../imgs/lupa.png')}
                     />
             </View>
+
+            {/* TITULO DO APP */}
             <Text
                 style={styles.name}
             >GreenMarket</Text>
+
+            {/* TEXO DE PROPAGANDA */}
             <Text
                 style={styles.title}
-            >1 em vendas de naturais!</Text>
+            >
+                1 em vendas de naturais!
+            </Text>
+            
+            {/* SUBMENU DE CATEGORIAS */}
             <ScrollView pagingEnabled={true} showsHorizontalScrollIndicator={true} horizontal style={styles.categories}>
                 <Text style={styles.itemSMenu}>frutas</Text>
                 <Text style={[styles.itemSMenu, styles.itemSMenuActive]}>todos</Text>
@@ -31,6 +41,8 @@ export default function THome() {
                 <Text style={styles.itemSMenu}>aromáticas</Text>
                 <Text style={styles.itemSMenu}>carrinho</Text>
             </ScrollView>
+            
+            {/* TEXTO DE MAIS VENDIDOS */}
             <View style={styles.propaganda}>
                 <Text
                     style={styles.propagandaText}
@@ -40,8 +52,16 @@ export default function THome() {
                     source={require('../../../imgs/arrowDown.png')}
                 />
             </View>
-
-            <View style={styles.card}>
+            
+            {/* CARDS PRODUTOS */}
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => {
+                    navigate('TProduto', {
+                        img: 'alface.png',
+                    })
+                }}
+            >
                 <View style={styles.cardImg}>
                     <Image
                         style={styles.produtoImg}
@@ -70,8 +90,16 @@ export default function THome() {
                     <Text style={styles.textPrice}>0,90 R$ - unidade</Text>
                     </View>
                 </View>
-            </View>
-            <View style={styles.card}>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => {
+                    navigate('TProduto', {
+                        img: 'tomate.png',
+                    })
+                }}
+            >
                 <View style={styles.cardImg}>
                     <Image
                         style={styles.produtoImg}
@@ -100,8 +128,16 @@ export default function THome() {
                     <Text style={styles.textPrice}>0,50 R$ - unidade</Text>
                     </View>
                 </View>
-            </View>
-            <View style={styles.card}>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => {
+                    navigate('TProduto', {
+                        img: 'maca.png',
+                    })
+                }}
+            >
                 <View style={styles.cardImg}>
                     <Image
                         style={styles.produtoImg}
@@ -130,8 +166,16 @@ export default function THome() {
                     <Text style={styles.textPrice}>4,50 R$ - Kg</Text>
                     </View>
                 </View>
-            </View>
-            <View style={styles.card}>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => {
+                    navigate('TProduto', {
+                        img: 'beringela.png',
+                    })
+                }}
+            >
                 <View style={styles.cardImg}>
                     <Image
                         style={styles.produtoImg}
@@ -160,37 +204,16 @@ export default function THome() {
                     <Text style={styles.textPrice}>5,00 R$ - Kg</Text>
                     </View>
                 </View>
-            </View>
-            <View style={styles.card}>
-                <View style={styles.cardImg}>
-                    <Image
-                        style={styles.produtoImg}
-                        source={require('../../../imgs/batata.png')}
-                    />
-                    <View style={styles.cardIcon}>
-                        <Image
-                            style={styles.favoriteIcon}
-                            source={require('../../../imgs/heart.png')}
-                        />
-                    </View>
-                </View>
-                <View style={styles.cardInfo}>
-                    <View style={styles.produtoInfo}>
-                        <Text style={styles.titleProduto}>Batata</Text>
-                        <Image
-                            style={styles.starIcon}
-                            source={require('../../../imgs/Star.png')}
-                        />
-                        <Text style={styles.avaliationProduto}>4,9</Text>
-                    </View>
-                    <View style={styles.produtoInfo}>
-                        <Text style={styles.textDesconto}>15% de desconto no Kg</Text>
-                    </View>
-                    <View style={styles.produtoInfo}>
-                    <Text style={styles.textPrice}>7,60 R$ - Kg</Text>
-                    </View>
-                </View>
-            </View>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                style={styles.card}
+                onPress={() => {
+                    navigate('TProduto', {
+                        img: 'cebola.png',
+                    })
+                }}
+            >
                 <View style={styles.cardImg}>
                     <Image
                         style={styles.produtoImg}
@@ -210,16 +233,17 @@ export default function THome() {
                             style={styles.starIcon}
                             source={require('../../../imgs/Star.png')}
                         />
-                        <Text style={styles.avaliationProduto}>4,6</Text>
+                        <Text style={styles.avaliationProduto}>4,9</Text>
                     </View>
                     <View style={styles.produtoInfo}>
-                        <Text style={styles.textDesconto}>10% de desconto no Kg</Text>
+                        <Text style={styles.textDesconto}>15% de desconto no Kg</Text>
                     </View>
                     <View style={styles.produtoInfo}>
-                    <Text style={styles.textPrice}>3,30 R$ - Kg</Text>
+                    <Text style={styles.textPrice}>7,60 R$ - Kg</Text>
                     </View>
                 </View>
-            </View>
+            </TouchableOpacity>
+                
         </View>
     )
 }

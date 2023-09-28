@@ -1,0 +1,153 @@
+import { getFocusedRouteNameFromRoute } from '@react-navigation/native'
+import { StyleSheet } from 'react-native'
+
+export const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+        backgroundColor: '#ffffff',
+        overflow: 'hidden',
+    },
+    produto: {
+        position: 'relative',
+        width: '100%',
+        height: '40%',
+        backgroundColor: '#efefef',
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        paddingTop: 40,
+        borderEndStartRadius: 30,
+        borderEndEndRadius: 30,
+    },
+    imgPrev: {
+        position: 'absolute',
+        top: '0%',
+        left: '0%',
+        margin: 8,
+        height: 30,
+        width: 30,
+    },
+    imgProduto: {
+        height: '100%',
+        width: '80%',
+    },
+    padin: {
+        marginHorizontal: '10%',
+    },
+    starICon: {
+        width: 24,
+        height: 24,
+    },
+    infoProduto1 :{
+        marginTop: 20,
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        alignItems: 'center',
+    },
+    nameProduto: {
+        fontSize: 20,
+        fontWeight: 'bold',
+    },
+    priceProduto: {
+        fontSize: 17,
+    },
+    infoProduto2 :{
+        marginTop: 20,
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        justifyContent: 'flex-start',
+        alignItems: 'center',
+    },
+    avaliation: {
+        marginLeft: 10,
+        fontSize: 20,
+        color: '#FFBB56',
+    },
+    text: {
+        marginTop: 30,
+        width: '100%',
+        textAlign: 'left',
+        fontSize: 16,
+        fontWeight: 'bold',
+    },
+    qtdsOptions: {
+        marginTop: 20,
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        padding: 8,
+        alignItems: 'center',
+    },
+    optionQtd: {
+        padding: 6,
+        borderRadius: 4,
+        backgroundColor: '#dedede',
+        marginRight: 12,
+        width: 34,
+        height: 34,
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    optionSelected: {
+        backgroundColor: '#5DB610',
+    },
+    textOption: {
+        fontSize: 15,
+        fontWeight: 'normal',
+    },
+    textOptionSelected: {
+        color: '#ffffff',
+    },
+    descriptionProduct:{
+        marginTop: 20,
+        width: '100%',
+        textAlign: 'left',
+        fontSize: 18,
+        fontWeight: 'bold',
+    },
+    descriptionText: {
+        marginTop: 10,
+        fontSize: 17,
+        color: '#9a9a9a',
+    },
+    actions: {
+        marginTop: 30,
+        width: '100%',
+        display: 'flex',
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    blockFavorite: {
+        width: 40,
+        height: 40,
+        borderRadius: 8,
+        backgroundColor: '#dadada',
+        padding: 8,
+        marginRight: 80,
+    },
+    favoriteIcon:{
+        width: '100%',
+        height: '100%',
+    },
+    btnComprar: {
+        display: 'flex',
+        alignItems: 'center',
+        justifyContent: 'center',
+        paddingHorizontal: 14,
+        borderRadius: 8,
+        flex: 1,
+        backgroundColor: '#5DB618',
+        height: '100%',
+    },
+    textComprar: {
+        textAlign: 'center',
+        color: '#ffffff',
+        fontSize: 18,
+    },
+})

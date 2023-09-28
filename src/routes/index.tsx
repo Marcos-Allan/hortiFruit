@@ -3,12 +3,13 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack'
 
 import LoginEfetuado from '../screens/LoginEfetuado'
 import Home from '../screens/Home'
-import THome from '../screens/THome'
 import Profile from '../screens/Profile'
 import Details from '../screens/Details'
 import LoginEmail from '../screens/LoginEmail'
 import LoginTelefone from '../screens/LoginTelefone'
 import LoginGeral from '../screens/LoginGeral'
+import THome from '../screens/THome'
+import TProduto from '../screens/TProduto'
 
 const Stack = createNativeStackNavigator()
 
@@ -36,6 +37,7 @@ export const Routes = () => {
                 <Stack.Screen name='LoginTelefone'component={LoginTelefone} />
                 <Stack.Screen name='LoginGeral'component={LoginGeral} />
                 <Stack.Screen name='THome' component={THome} />
+                <Stack.Screen name='TProduto' component={TProduto} />
             </Stack.Navigator>
         </NavigationContainer>
     )
