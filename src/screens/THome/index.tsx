@@ -30,7 +30,6 @@ export default function THome() {
                 <Text style={styles.itemSMenu}>verduras</Text>
                 <Text style={styles.itemSMenu}>aromáticas</Text>
                 <Text style={styles.itemSMenu}>carrinho</Text>
-                <Text style={styles.itemSMenu}>11</Text>
             </ScrollView>
             <View style={styles.propaganda}>
                 <Text
